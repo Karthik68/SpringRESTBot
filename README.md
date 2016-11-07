@@ -54,30 +54,31 @@ I) Program Argument Input & Console Output:
    Run com.bot.spring.rest.SpringRestBotApplication main class with run configuration program arguments as below
 
 ### Example a
-restCmd1-PLACE:0,0,NORTH
-restCmd2-MOVE
-restCmd3-REPORT
+    restCmd1-PLACE:0,0,NORTH
+    restCmd2-MOVE
+    restCmd3-REPORT
 
 Expected output:
 
     0,1,NORTH
 
 ### Example b
-restCmd1-PLACE 0,0,NORTH
-restCmd2-LEFT
-restCmd3-REPORT
+
+    restCmd1-PLACE:0,0,NORTH
+    restCmd2-LEFT
+    restCmd3-REPORT
 
 Expected output:
 
     0,0,WEST
 
 ### Example c
-restCmd1-PLACE 1,2,EAST
-restCmd2-MOVE
-restCmd3-MOVE
-restCmd4-LEFT
-restCmd5-MOVE
-restCmd6-REPORT
+    restCmd1-PLACE:1,2,EAST
+    restCmd2-MOVE
+    restCmd3-MOVE
+    restCmd4-LEFT
+    restCmd5-MOVE
+    restCmd6-REPORT
 
 Expected output
 
@@ -89,7 +90,7 @@ II) Program Argument Input & Console Output:
    Run com.bot.spring.rest.SpringRestBotApplication main class with run configuration program arguments as below
 
 ### Example a
-file-Input.txt
+    file-Input.txt
 
 Expected output (Based on Commands Added in Input.txt):
 
