@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+   
+	<bean name="table" class="com.robot.SimpleTable">
+        <constructor-arg index="0" value="4"/>
+        <constructor-arg index="1" value="4"/>
+    </bean>
+
+    <bean name="output" class="com.robot.io.StandardOutput"/>
+
+    <bean name="robot" class="com.robot.SimpleRobot"/>
+
+    <bean name="parser" class="com.parser.SimpleParser">
+        <property name="robot" ref="robot"/>
+        <property name="output" ref="output"/>
+        <property name="table" ref="table"/>
+    </bean>
+</beans>
